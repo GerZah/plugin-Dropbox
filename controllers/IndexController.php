@@ -31,7 +31,7 @@ class Dropbox_IndexController extends Omeka_Controller_AbstractActionController
                 $uploadedFileNames = $fileNames;
                 $fileErrors = $this->_uploadFiles($fileNames);
                 if ($fileErrors) {
-                    $message = 'Some files were not uploaded. Specific errors for each file follow below:';
+                    $message = __('Some files were not uploaded. Specific errors for each file follow below:');
                     foreach ($fileErrors as $fileName => $errorMessage) {
                        $message .= "\n- $fileName: $errorMessage";
                     }
@@ -43,11 +43,11 @@ class Dropbox_IndexController extends Omeka_Controller_AbstractActionController
                 $this->_helper->redirector('index');
             }
         } else {
-            $this->_helper->flashMessenger('You must select a file to upload.');
+            $this->_helper->flashMessenger(__('You must select a file to upload.'));
             $this->_helper->redirector('index');
         }
         if ($uploadedFileNames) {
-            $message = 'The following files were uploaded:';
+            $message = __('The following files were uploaded:');
             foreach ($uploadedFileNames as $fileName) {
                 $message .= "\n- $fileName";
             }
@@ -66,7 +66,7 @@ class Dropbox_IndexController extends Omeka_Controller_AbstractActionController
     protected function _uploadFiles($fileNames)
     {
         if (!dropbox_can_access_files_dir()) {
-            throw new Dropbox_Exception('The Dropbox files directory must be both readable and writable.');
+            throw new Dropbox_Exception(__('The Dropbox files directory must be both readable and writable.'));
         }
         $fileErrors = array();
         foreach ($fileNames as $fileName) {
