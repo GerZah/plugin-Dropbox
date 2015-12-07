@@ -1,21 +1,22 @@
 # Translation for the Dropbox plugin for Omeka.
 # Copyright (C) 2013 Roy Rosenzweig Center for History and New Media
 # This file is distributed under the same license as the Omeka package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Dropbox\n"
+"Project-Id-Version: WeSa Omeka\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-Dropbox/issues\n"
 "POT-Creation-Date: 2013-01-23 21:49-0500\n"
-"PO-Revision-Date: 2015-10-13 11:36+0200\n"
-"Language: de_DE\n"
+"PO-Revision-Date: 2015-11-23 11:42+0100\n"
+"Last-Translator: githanjalli <anjallinhere@gmail.com>\n"
+"Language-Team: German (Germany) (http://www.transifex.com/upb/wesa-omeka/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.8.5\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: DropboxPlugin.php:46 views/admin/index/index.php:5
 msgid "Dropbox"
@@ -25,17 +26,13 @@ msgstr "Dropbox"
 msgid "Add Dropbox Files"
 msgstr "Dropbox-Dateien hinzufügen"
 
-#: DropboxPlugin.php:91 controllers/IndexController.php:69
-#: views/admin/index/dropboxlist.php:2
+#: DropboxPlugin.php:91 controllers/IndexController.php:69 views/admin/index/dropboxlist.php:2
 msgid "The Dropbox files directory must be both readable and writable."
 msgstr "Das Dropbox-Verzeichnis muss sowohl lesbar als auch schreibbar sein."
 
 #: controllers/IndexController.php:34
-msgid ""
-"Some files were not uploaded. Specific errors for each file follow below:"
-msgstr ""
-"Manche Dateien wurden nicht hochgeladen. Spezifische Fehler für jede "
-"einzelne Datei siehe unten:"
+msgid "Some files were not uploaded. Specific errors for each file follow below:"
+msgstr "Manche Dateien wurden nicht hochgeladen. Spezifische Fehler für jede einzelne Datei siehe unten:"
 
 #: controllers/IndexController.php:46
 msgid "You must select a file to upload."
@@ -76,28 +73,16 @@ msgid "File Name"
 msgstr "Dateiname"
 
 #: views/admin/index/index.php:20
-msgid ""
-"To make files available in the Dropbox, upload them to the Dropbox plugin's "
-"files/ folder on the server.  Dropbox files can be added in bulk to your "
-"site from this page, or added to individual items through an item's admin "
-"interface."
-msgstr ""
-"Um eine Datei in der Dropbox verfügbar zu machen, laden Sie sie in das "
-"files/-Verzeichnis des Dropbox-Plugins auf den Server hoch. Entweder können "
-"Sie mehrere Dropbox-Dateien auf einmal zu Ihrer Site hinzufügen, oder diese "
-"über das Objekt-Admin-Interface individuell zu Objekten hinzufügen."
+msgid "To make files available in the Dropbox, upload them to the Dropbox plugin's files/ folder on the server.  Dropbox files can be added in bulk to your site from this page, or added to individual items through an item's admin interface."
+msgstr "Um eine Datei in der Dropbox verfügbar zu machen, laden Sie sie in das files/-Verzeichnis des Dropbox-Plugins auf den Server hoch. Entweder können Sie mehrere Dropbox-Dateien auf einmal zu Ihrer Site hinzufügen, oder diese über das Objekt-Admin-Interface individuell zu Objekten hinzufügen."
 
 #: views/admin/index/index.php:27
 msgid "Batch Add Items"
 msgstr "Objekte stapelweise hinzufügen"
 
 #: views/admin/index/index.php:30
-msgid ""
-"For each file selected, a new item will be created. The properties set to "
-"the right will be applied to each new item."
-msgstr ""
-"Für jede gewählte Datei wird ein neues Objekt angelegt. Der Eigenschaften-"
-"Satz auf der rechten Seite werden für jedes neue Objekt angewandt."
+msgid "For each file selected, a new item will be created. The properties set to the right will be applied to each new item."
+msgstr "Für jede gewählte Datei wird ein neues Objekt angelegt. Der Eigenschaften-Satz auf der rechten Seite werden für jedes neue Objekt angewandt."
 
 #: views/admin/index/index.php:38
 msgid "Upload Files as Items"
